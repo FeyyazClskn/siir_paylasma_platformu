@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hakkımda | ŞiirBahçesi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body onload="initNavbar()">
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">ŞiirBahçesi</a>
+    </div>
+
+        <a href="profile.html" class="text-white me-2" id="navUsername"></a>
+        <img src="images/avatar.png" class="avatar" alt="Profil Fotoğrafı">
+    </div>
+</nav>
+
+
+<div class="container mt-5">
+    <h2 class="mb-4">Hakkımda</h2>
+    <p>
+        Bu site kullanıcıların şiirlerini paylaşabileceği,
+        beğenebileceği ve etkileşim kurabileceği bir platformdur.
+    </p>
+
+    <hr class="my-4">
+
+    <h4>İletişim</h4>
+
+<form onsubmit="sendMessage(event)">
+    <div class="mb-3">
+        <label class="form-label">Ad Soyad</label>
+        <input type="text" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">E-posta</label>
+        <input type="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Mesaj</label>
+        <textarea class="form-control" rows="4" required></textarea>
+    </div>
+
+    <button class="btn btn-primary">Gönder</button>
+
+    <p id="formSuccess" class="text-success mt-3" style="display:none;">
+        ✔ Mesajınız başarıyla gönderildi.
+    </p>
+</form>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
