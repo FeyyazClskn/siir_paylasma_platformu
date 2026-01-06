@@ -1,0 +1,387 @@
+/* =====================
+   GOOGLE FONT
+===================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =====================
+   GENEL AYARLAR
+===================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    min-height: 100vh;
+    color: #212529;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+/* =====================
+   NAVBAR (TÜM SAYFALAR)
+===================== */
+.navbar {
+    height: 60px;
+    background-color: #111827;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+}
+
+.nav-user a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.nav-user a:hover {
+    color: #ffffff;
+}
+
+.nav-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* =====================
+   FORM ELEMANLARI
+===================== */
+input, textarea {
+    border-radius: 14px !important;
+    padding: 12px 14px !important;
+    border: 1px solid #ced4da !important;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: #212529 !important;
+    box-shadow: 0 0 0 0.15rem rgba(33,37,41,.25) !important;
+}
+
+textarea {
+    resize: none;
+}
+
+/* =====================
+   BUTONLAR
+===================== */
+.btn {
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover,
+.btn-primary:hover,
+.btn-success:hover {
+    transform: scale(1.05);
+}
+
+/* =====================
+   KART TASARIMI
+===================== */
+.card {
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    transition: all 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+}
+
+/* =====================
+   ŞİİR PAYLAŞIM ALANI
+===================== */
+.poem-area {
+    margin-bottom: 30px;
+}
+
+.poem-card {
+    animation: fadeIn 0.6s ease;
+}
+
+.poem-card p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   AVATAR
+===================== */
+.avatar {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    display: inline-block;
+    background-color: #fff;
+
+    border: 2px solid #fff;
+}
+
+
+/* =====================
+   BEĞENİ SİSTEMİ
+===================== */
+.like-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    color: #adb5bd;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.like-btn:hover {
+    transform: scale(1.2);
+}
+
+.like-btn.liked {
+    color: #e63946;
+    transform: scale(1.2);
+}
+
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
+
+/* =====================
+   PROFİL SAYFASI
+===================== */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 4px solid #212529;
+}
+
+.profile-card p {
+    color: #6c757d;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;  
+    display: block;
+}
+
+
+/* =====================
+   ABOUT / İLETİŞİM
+===================== */
+.about-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.about-section p {
+    line-height: 1.8;
+    color: #495057;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    color: #868e96;
+}
+
+/* =====================
+   ANİMASYON
+===================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   AUTH (LOGIN / REGISTER)
+   ========================= */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-page {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+    animation: fadeIn 0.6s ease;
+}
+
+
+.auth-card h2 {
+    margin-bottom: 22px;
+    font-size: 24px;
+    color: #1f2933;
+}
+
+/* INPUTLAR */
+.auth-card .form-group {
+    margin-bottom: 15px;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #d0d7de;
+    font-size: 14px;
+    transition: 0.2s ease;
+    outline: none;
+}
+
+.auth-card input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* BUTON */
+.auth-card .primary-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.auth-card .primary-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(37,99,235,0.35);
+}
+
+/* HATA MESAJI */
+.auth-card .warning {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #dc2626;
+}
+
+/* ALT METİN */
+.auth-card .switch-text {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #475569;
+}
+
+.auth-card .switch-text a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-card .switch-text a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   ABOUT - PROFİL FOTO FIX
+   ========================= */
+
+.about-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 12px;
+    border: 2px solid #e5e7eb;
+}
+
+.nav-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
